@@ -1,0 +1,13 @@
+name: HGW Runner Diagnostic
+on:
+  push:
+    paths:
+      - '.github/workflows/hgw-diagnostic.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnostic:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Runner operational'
